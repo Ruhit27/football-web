@@ -1,0 +1,244 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* FONT AWESOME */
+
+
+/* COMMON STYLES */
+body{
+margin: 0;
+font-family: "Poppins", sans-serif;
+}
+hr{
+color: grey;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+/* HEADER SECTION STYLES */
+header{
+padding-top: 4%;
+background-color: rgba(45, 37, 160, 1);
+}
+nav{
+padding: 0px 5%;
+display: flex;
+justify-content: space-between;
+}
+.left-menu{
+width: 600px;
+}
+nav a{
+text-decoration: none;
+color: white;
+padding: 15% 5%;
+}
+
+.top-section{
+display: flex;
+padding: 7% 7%;
+align-items: center;
+}
+.half-width1, .half-width2{
+width: 45%;
+}
+.half-width2 img{
+width: 100%;
+padding-left: 20px;
+}
+.half-width2{
+margin-left: 5%;
+}
+
+.top-section:hover .half-width2{
+transform: rotate(360deg) scale(1.2) skew(-10deg);
+transition: transform 1s;
+}
+
+.top-title{
+font-size: 60px;
+font-weight: 700;
+color: white;
+line-height: 80px;
+margin-bottom: 27px;
+}
+.button-link{
+background-color: rgba(224, 44, 109, 1);
+color: white;
+padding: 10px 24px;
+text-decoration: none;
+}
+
+
+/* Players section */
+
+.players{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+margin: 70px 10%;
+grid-row-gap: 27px;
+grid-column-gap: 30px;
+}
+article.player{
+width: 330px;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.player-picture{
+width: 300px;
+height: 256px;
+margin: 15px;
+margin-top: 15px;
+}
+.player-picture img{
+
+width: 100%;
+}
+.player-name{
+font-size: 28px;
+font-weight: 700;
+margin-bottom: 10px;
+}
+.player-details{
+margin: 15px;
+}
+.player p{
+color: rgba(108, 108, 108, 1);
+font-size: 16px;
+}
+
+/* EXTRA section: BLOGS */
+.blogs{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.blog img{
+width: 400px;
+border-radius: 10px;
+}
+.blog{
+width: 400px;
+padding: 3%;
+}
+.blog:hover{
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.blog-name{
+font-size: 28px;
+font-weight: 700;
+margin: 3% 0%;
+}
+.blog p{
+color: rgb(94, 93, 93);
+font-size: 16px;
+}
+.blog a{
+text-decoration: none;
+color: blue;
+}
+
+/* FIFA PARTNER SECTION */
+.partner-title{
+font-size: 28px;
+font-weight: 700;
+text-align: center;
+margin-bottom: 0;
+}
+.fifa-partners{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.partner{
+padding: 5%;
+}
+.partner img{
+width: 150px;
+}
+#coca-image img{
+width: 220px;
+}
+
+/* FOOTER SECTION */
+.footer-box{
+display:flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 50px;
+margin-top: 150px;
+}
+.footer-logo-image{
+width: 480px;
+}
+.footer-icons{
+display:grid;
+grid-template-columns: repeat(4,1fr);
+grid-column-gap: 14px;
+margin-bottom: 20px;
+}
+.fab, .far{
+color: grey;
+}
+
+
+/* MEDIA QUERY */
+
+/* MOBILE DEVICE */
+@media only screen and (max-width: 688px) {
+nav {
+display: none;
+}
+.top-section{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-row-gap: 24px;
+}
+.top-title{
+font-size: 40px;
+}
+.half-width1, .half-width2{
+width: 100%;
+}
+.half-width2{
+margin-top: 15%;
+margin-right: 0;
+margin-left: 0;
+}
+.players{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.player{
+margin-bottom: 2%;
+}
+.blog img{
+width: 300px;
+}
+.blog{
+width: 300px;
+margin-bottom: 7%;
+}
+.footer-box img{
+width: 300px;
+}
+}
+
+/* TABLET DEVICE */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+nav .button-link{
+padding: 0%;
+}
+.top-title{
+font-size: 40px;
+}
+.players{
+grid-template-columns: repeat(2, 1fr);
+margin-left: 5%;
+}
+.footer-box img{
+width: 400px;
+}
+}
